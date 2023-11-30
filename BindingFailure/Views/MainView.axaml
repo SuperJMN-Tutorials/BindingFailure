@@ -7,12 +7,12 @@
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="BindingFailure.Views.MainView"
              x:DataType="vm:MainViewModel">
-	<Design.DataContext>
-		<vm:MainViewModel />
-	</Design.DataContext>
+    <Design.DataContext>
+        <vm:MainViewModel />
+    </Design.DataContext>
 
-	<UserControl.DataTemplates>
-		<DataTemplate DataType="vm:NestedViewModel">
+    <UserControl.DataTemplates>
+        <DataTemplate DataType="vm:NestedViewModel">
             <c:MasterDetailsView ItemsSource="{Binding Sections}">
                 <c:MasterDetailsView.DetailsTemplate>
                     <DataTemplate DataType="vm:Section">
@@ -30,18 +30,18 @@
         </DataTemplate>
     </UserControl.DataTemplates>
 
-	<c:MasterDetailsView ItemsSource="{Binding Sections}">
-		<c:MasterDetailsView.DetailsTemplate>
-			<DataTemplate DataType="vm:Section">
-				<DockPanel>
-					<ContentControl Content="{Binding Content}" />
+    <c:MasterDetailsView ItemsSource="{Binding Sections}">
+        <c:MasterDetailsView.DetailsTemplate>
+            <DataTemplate DataType="vm:Section">
+                <DockPanel>
+                    <ContentControl Content="{Binding Content}" />
                 </DockPanel>
-			</DataTemplate>
-		</c:MasterDetailsView.DetailsTemplate>
-		<c:MasterDetailsView.ItemTemplate>
-			<DataTemplate DataType="vm:Section">
-				<TextBlock Text="{Binding Name}" />
-			</DataTemplate>
-		</c:MasterDetailsView.ItemTemplate>
-	</c:MasterDetailsView>
+            </DataTemplate>
+        </c:MasterDetailsView.DetailsTemplate>
+        <c:MasterDetailsView.ItemTemplate>
+            <DataTemplate DataType="vm:Section">
+                <TextBlock Text="{Binding Name}" />
+            </DataTemplate>
+        </c:MasterDetailsView.ItemTemplate>
+    </c:MasterDetailsView>
 </UserControl>
