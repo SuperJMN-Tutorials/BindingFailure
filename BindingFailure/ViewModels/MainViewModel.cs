@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using ReactiveUI.Fody.Helpers;
 
 namespace BindingFailure.ViewModels;
 

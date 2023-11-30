@@ -15,7 +15,7 @@
                              ItemTemplate="{Binding ItemTemplate}"
                              SelectedItem="{Binding SelectedItem}"
                              ItemsSource="{Binding ItemsSource}"
-                             Width="{Binding MasterPaneWidth}" DockPanel.Dock="Left" />
+                             Width="200" DockPanel.Dock="Left" />
 
 					<ContentControl ContentTemplate="{Binding DetailsTemplate}"
                                     Content="{Binding SelectedItem}" />
